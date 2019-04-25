@@ -1,0 +1,84 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header {
+  background-color: rebeccapurple;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* BODY/ISI */
+nav {
+  float: left;
+  width: 30%;
+  height: 600px; 
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 600px; 
+}
+
+/* Hapus float setelah kolom */
+section:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* FOOTER */
+footer {
+  background-color: rebeccapurple;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Tata letak responsif - membuat dua kolom / kotak saling bertumpuk, bukan di samping satu sama lain, di layar kecil */
+@media (max-width: 100px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+  }
+    
+  td {
+    
+    text-align: left;
+    padding: 8px;
+  }
+  
+
